@@ -5,7 +5,7 @@
 Template.teams.helpers({
     title: 'Teams',
     teams: function () {
-        return Teams.find({});
+        return Teams.find();
     },
     isCreatingTeam: function () {
         return Session.get('isCreatingTeam');
@@ -21,7 +21,7 @@ Template.teams.events({
     'submit form.create-team': function (e, tpl) {
         e.preventDefault();
         var teamName = tpl.$('input[name=name]').val();
-        Teams.insert({name: teamName},
+        Teams.insert({name: teamName, ownerId: Meteor.userId()},
             function (error, _id) {
                 if (error) {
                     alert(error);
