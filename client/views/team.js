@@ -3,8 +3,11 @@
  */
 
 Template.team.helpers({
-    isEditingTeam: function () {
+    editedTeamId: function () {
         return Session.get('editedTeamId') === this._id;
+    },
+    isEditingTeam: function () {
+        return Session.get('isEditingTeam');
     }
 });
 

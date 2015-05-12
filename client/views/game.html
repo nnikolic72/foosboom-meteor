@@ -1,5 +1,5 @@
 <template name="game">
-    <li>{{#if completed}}
+    <div class="well">{{#if completed}}
 
         {{teams.[0].name}} ({{teams.[0].score}})
         vs
@@ -23,5 +23,5 @@
 
         <a href="#" class="btn btn-xs btn-default delete-game">Delete</a>
     {{/if}}
-    </li>
+    </div>
 </template>
