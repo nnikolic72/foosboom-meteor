@@ -2,14 +2,14 @@
     <li>
       {{#if isEditingTeam }}
           <form class="edit-team">
-              <input name="name" type="text" value="{{name}}">
-              <button type="submit">Submit</button>
-              <a class="cancel" href="#">Cancel</a>
+              <input class="form-control" name="name" type="text" value="{{name}}">
+              <button class="btn btn-xs" type="submit">Submit</button>
+              <a class="btn btn-xs cancel"  href="#">Cancel</a>
           </form>
       {{else}}
         {{ name }}
-          <a href="#" class="edit">edit</a>
-          <a href="#" class="remove"> (x)</a>
+          <a class="btn btn-xs edit" href="#" >edit</a>
+          <a class="btn btn-xs remove" href="#" > (x)</a>
       {{/if}}
     </li>
 </template>

@@ -2,7 +2,7 @@
     <h3>Games</h3>
 
   {{#if isCreatingGame}}
-      <form class="form-create">
+      <form class="form form-create">
           <select name="teamOne">
             {{#each teams}}
                 <option value="{{_id}}">{{name}}</option>
@@ -17,11 +17,11 @@
             {{/each}}
           </select>
 
-          <button type="submit">Submit</button>
-          <a class="cancel" href="#">Cancel</a>
+          <button class="btn btn-default" type="submit">Submit</button>
+          <a class="btn btn-default cancel" href="#">Cancel</a>
       </form>
   {{else}}
-      <a class="create" href="#">Create</a>
+      <a class="btn btn-default create" href="#">Create</a>
   {{/if}}
 
     <ul>

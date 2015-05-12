@@ -8,18 +8,20 @@
     {{else}}
 
         {{teams.[0].name}} (
-        <a class="score" data-inc="-1" data-index="0" href="#">-</a>
+        <a class="btn btn-xs btn-default score" data-inc="-1" data-index="0" href="#">-</a>
         {{teams.[0].score}}
-        <a class="score" data-inc="1" data-index="0" href="#">+</a>)
+        <a class="btn btn-xs btn-default score" data-inc="1" data-index="0" href="#">+</a>)
+    <br>
         vs
+    <br>
         {{teams.[1].name}} (
-        <a class="score" data-inc="-1" data-index="1" href="#">-</a>
+        <a class="btn btn-xs btn-default score" data-inc="-1" data-index="1" href="#">-</a>
         {{teams.[1].score}}
-        <a class="score" data-inc="1" data-index="1" href="#">+</a>)
+        <a class="btn btn-xs btn-default score" data-inc="1" data-index="1" href="#">+</a>)
+        <br>
+        <a href="#" class="btn btn-xs btn-default finish-game">Finish</a>
 
-        <a href="#" class="finish-game">Finish</a>
-
-        <a href="#" class="delete-game">Delete</a>
+        <a href="#" class="btn btn-xs btn-default delete-game">Delete</a>
     {{/if}}
     </li>
 </template>
