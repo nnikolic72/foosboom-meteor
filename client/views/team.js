@@ -44,6 +44,8 @@ Template.team.events({
             });
 
             Session.set('isEditingTeam', null);
+            Session.set('editedTeamId', null);
+
         }
     }
 });

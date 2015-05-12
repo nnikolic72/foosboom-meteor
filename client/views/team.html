@@ -1,6 +1,6 @@
 <template name="team">
     <li>
-      {{#if isEditingTeam }}
+      {{#if editedTeamId }}
           <form class="edit-team">
               <input class="form-control" name="name" type="text" value="{{name}}">
               <button class="btn btn-xs" type="submit">Submit</button>
@@ -8,8 +8,8 @@
           </form>
       {{else}}
         {{ name }}
-          <a class="btn btn-xs edit" href="#" >edit</a>
-          <a class="btn btn-xs remove" href="#" > (x)</a>
+          <a class="btn btn-xs btn-default edit" href="#" >edit</a>
+          <a class="btn btn-xs btn-default remove" href="#" >x</a>
       {{/if}}
     </li>
 </template>
